@@ -34,7 +34,7 @@ class App extends Component {
   callApi = async (latitude, longitude, km) => {
     //const response = await fetch(`https://crash-sites-api.herokuapp.com/api/v1/crashes/${this.state.longitude}/${this.state.latitude}/100`);
     //const request = `http://localhost:5000/api/v1/crashes/${longitude}/${latitude}/${km}`;
-    const request = `https://crash-sites-api.herokuapp.com/api/v1/crashes/${this.state.longitude}/${this.state.latitude}/100`;
+    const request = `https://crash-sites-api.herokuapp.com/api/v1/crashes/${longitude}/${latitude}/${km}`;
     console.log(request);
     const response = await fetch(request);
     
