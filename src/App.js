@@ -63,7 +63,7 @@ class App extends Component {
         .catch(err => console.log(err));
       },
       error => console.log(error),
-      { enableHighAccuracy: true, timeout: 20000, maximumAge: Infinity }
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
     )
   }
 
